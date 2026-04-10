@@ -23,33 +23,77 @@
 
 /* font H1 H2 H3 P */
 
-h1,h2,h3{
+h1{
     font-family: "DM Serif Display", serif;
     color: #292f36;
+    font-size: 65px;
+    font-weight: 400;
+}
+
+h2{
+    font-family: "DM Serif Display", serif;
+    color: #292f36;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+h3{
+    font-family: "DM Serif Display", serif;
+    color: #292f36;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 p{
     font-family:"Jost", sans-serif;
     color: #292f36;
+    font-family: 22px;
 }
 
-/* FLEX BOX */
+.bold{
+    font-weight: 700;
+}
+/*            FLEX BOX               */
 
+/* enfants */
+.flex-50{
+    flex-basis: 50%;
+}
+
+.flex-30{
+    flex-basis: 30%;
+}
+
+/* parents */
+
+/* Flex */
 .flex{
     display: flex;
     flex-wrap: wrap;
 }
+
+/* Flex-direction */
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+/* Justify-content */
 
 .space-between{
     justify-content: space-between;
 }
 
 .space-around{
-    justify-content: spa;
-}
-
-.align-center{
-    align-items: center;
+    justify-content: space-around;
 }
 
 .justify-center{
@@ -60,91 +104,111 @@ p{
     justify-content: flex-end;
 }
 
+.flex-start{
+    justify-content: flex-start;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+/* align-items */
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+
+/* align-content */
+.content-start{
+    align-content: flex-start;
+}
+
+.content-center{
+    align-content: center;
+}
+
+.content-around{
+    align-content: space-around;
+}
+/* GAP */
 .gap-8{
     gap: 8px;
+}
+
+.gap-10{
+    gap: 10px;
 }
 
 .gap-16{
     gap: 16px;
 }
 
+.gap-23{
+    gap: 23px;
+}
+
+.gap-25{
+    gap: 25px;
+}
 .gap-32{
     gap: 32px;
 }
 
-/* MARGIN & PADDING */
-
-.mt-8{
-    margin-top: 8px;
+.gap-38{
+    gap: 38px;
 }
+
+.gap-45{
+    gap: 45px;
+}
+
+.gap-50{
+    gap: 50px;
+}
+
+/* MARGIN & PADDING */
 
 .mb-16{
     margin-bottom: 16px;
 }
 
-.margin-20{
-    margin: 20px;
-}
-.mt-20{
-    margin-top: 20px;
-}
-
-.mb-20{
-    margin-bottom: 20px;
-}
-.mt-32{
-    margin-top: 32px;
-}
-
-.mt-64{
-    margin-top: 64px;
-}
-
 .mb-32{
     margin-bottom: 32px;
 }
+.mb-48{
+    margin-bottom: 48px;
+}
 
+.mt-48{
+    margin-top: 48px;
+}
 .mb-128{
     margin-bottom: 128px;
 }
 
-.mt-128{
-    margin-top: 128px;
+.pt-48{
+    padding-right: 48px;
 }
 
-.pt-16{
-    padding-top: 16px;
-}
-
-.pb-16{
-    padding-bottom: 16px;
-}
-
-.pt-32{
-    padding-top: 32px;
-}
-
-.pb-32{
-    padding-bottom: 32px;
-}
-
-.pt-64{
-    padding-top: 64;
-}
-
-.pb-64{
-    padding-bottom: 64;
-}
-
-.pt-128{
-    padding-top: 128px;    
-}
 /* Tailles */
 .w-40{
     width: 40%;
 }
 .w-30{
     width: 30%;
+}
+
+.w-25{
+    width: 25%;
 }
 
 
@@ -164,22 +228,27 @@ p{
 
 /* Style de bouton */
 
+a{
+    text-decoration: none;
+}
+
 .btn-noir{
     background-color: #292f36;
-    border-radius: 10px;
+    border-radius: 18px;
     text-decoration: none;
     font-family: "Jost", sans-serif;
-    font-style: bold;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 16px;
+    font-style: semi-bold;
+    font-weight: 400;
     color: white;
-    padding: 20px 40px;
+    padding: 15px 30px;
 }
 
 .btn-nav a{
     text-decoration: none;
     font-family: "Jost", sans-serif;
     color: #292f36;
+    gap: 64px;
 }
 
 /* Container */
@@ -195,16 +264,21 @@ p{
 
 .section-banner{
     background-image: url("asset/Banner.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    border-radius: 0px 0px 0px 191px;
+}
+
+.section-beige{
+    background-color: #F4F0EC;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    border-radius: 0px 0px 0px 200px;
 }
-
 
 /* couleur */
 
-.dorée{
+.doree{
     color: #CDA274;
 }
 
@@ -214,7 +288,25 @@ p{
     padding-bottom: 100px;
 }
 
+/* Image */
 .img-article{
-    border-radius: 20px 20px;
-    height: 700px;
+    border-radius: 30px 30px;
+    height: 600px;
+    width: 553px;
+}
+
+.img-tel{
+    height: 26px;
+    width: 26px;
+}
+
+/* Carte */
+
+.card{
+    background-color: white;
+    background-size: cover;
+    border-radius: 20px;
+    width: 370px;
+    height: 339px;
+    padding: 10px 10px;
 }
