@@ -65,6 +65,7 @@ p{
     flex-basis: 30%;
 }
 
+
 /* parents */
 
 /* Flex */
@@ -178,6 +179,14 @@ p{
     gap: 50px;
 }
 
+.gap-100{
+    gap: 100px;
+}
+
+.gap-106{
+    gap: 106px;
+}
+
 /* MARGIN & PADDING */
 
 .mb-16{
@@ -193,6 +202,10 @@ p{
 
 .mt-48{
     margin-top: 48px;
+}
+
+.mt-54{
+    margin-top: 54px;
 }
 
 .mb-64{
@@ -277,6 +290,7 @@ a{
     margin-right: auto;
 }
 
+
 /* Image de fond */
 
 .section-banner{
@@ -326,6 +340,6 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-    padding-top: 54px;
-    padding-bottom: 10px;
+    width: 370px;
+    height: 339px;
 }
